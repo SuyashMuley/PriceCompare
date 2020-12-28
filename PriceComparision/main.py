@@ -132,7 +132,7 @@ def home():
         scrape(urlB)
         scrape(urlL)
         result = priceComparision(keyword)
-        print(result)
+        print(result, keyword)
         return render_template("result.html", results=result.items())
 
 
